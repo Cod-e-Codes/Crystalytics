@@ -1,3 +1,7 @@
+import salesDashboard from "../components/sales-dashboard.png";
+import customerSegmentation from "../components/customer-segmentation.png";
+import financialForecasting from "../components/financial-forecasting.png";
+
 export interface Project {
     id: number;
     title: string;
@@ -29,7 +33,7 @@ export const projects: Project[] = [
         title: "Sales Dashboard",
         description: "Interactive sales analysis dashboard built with Tableau.",
         technologies: ["Tableau", "SQL", "Excel"],
-        image: "/images/projects/sales-dashboard.png",
+        image: salesDashboard,
         link: "#",
     },
     {
@@ -37,7 +41,7 @@ export const projects: Project[] = [
         title: "Customer Segmentation",
         description: "K-means clustering to identify customer segments.",
         technologies: ["Python", "Pandas", "Matplotlib"],
-        image: "/images/projects/customer-segmentation.png",
+        image: customerSegmentation,
         link: "#",
     },
     {
@@ -45,7 +49,7 @@ export const projects: Project[] = [
         title: "Financial Forecasting",
         description: "Time-series forecasting model for revenue prediction.",
         technologies: ["R", "ggplot2", "SQL"],
-        image: "/images/projects/financial-forecasting.png",
+        image: financialForecasting,
         link: "#",
     },
 ];

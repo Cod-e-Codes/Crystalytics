@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "./logo.png"; // Import the logo
 import dataAnalysisImage from "./wordcloud.png"; // Import the word cloud image
 
 export default function Hero() {
@@ -13,7 +14,7 @@ export default function Hero() {
                     className="flex-1 flex flex-col items-center"
                 >
                     <motion.img
-                        src="/logo.png"
+                        src={logo} // Use the imported logo variable
                         alt="Crystalytics Logo"
                         className="w-64 md:w-96 lg:w-[500px]"
                     />
