@@ -8,18 +8,30 @@
 /* Base Layer */
 @layer base {
   :root {
-    --background: 190 60% 15%;          /* Background: Dark teal */
-    --foreground: 0 0% 98%;             /* Foreground: White for contrast */
-    --card: 190 50% 25%;                /* Card: A slightly lighter teal for distinction */
-    --card-foreground: 0 0% 100%;       /* Card text: Pure white for readability */
-    --primary: 47 92% 58%;              /* Primary: Vibrant yellow for action elements */
-    --primary-foreground: 190 60% 15%;  /* Primary text: Dark teal for contrast */
-    --secondary: 190 40% 20%;           /* Secondary: Slightly darker teal for accents */
-    --secondary-hover: 190 40% 25%;     /* Secondary hover: Slightly lighter teal */
-    --secondary-foreground: 0 0% 100%;  /* Secondary text: Pure white for consistency */
-    --muted: 190 30% 35%;               /* Muted: A mid-tone teal for subtle elements */
-    --muted-foreground: 190 20% 90%;    /* Muted text: Very light teal for subtle contrast */
-    --radius: 0.5rem;                   /* Radius: Keeps the same corner styling */
+    --background: 190 60% 15%;
+    /* Background: Dark teal */
+    --foreground: 0 0% 98%;
+    /* Foreground: White for contrast */
+    --card: 190 50% 25%;
+    /* Card: A slightly lighter teal for distinction */
+    --card-foreground: 0 0% 100%;
+    /* Card text: Pure white for readability */
+    --primary: 47 92% 58%;
+    /* Primary: Vibrant yellow for action elements */
+    --primary-foreground: 190 60% 15%;
+    /* Primary text: Dark teal for contrast */
+    --secondary: 190 40% 20%;
+    /* Secondary: Slightly darker teal for accents */
+    --secondary-hover: 190 40% 25%;
+    /* Secondary hover: Slightly lighter teal */
+    --secondary-foreground: 0 0% 100%;
+    /* Secondary text: Pure white for consistency */
+    --muted: 190 30% 35%;
+    /* Muted: A mid-tone teal for subtle elements */
+    --muted-foreground: 190 20% 90%;
+    /* Muted text: Very light teal for subtle contrast */
+    --radius: 0.5rem;
+    /* Radius: Keeps the same corner styling */
   }
 
   html {
@@ -27,9 +39,12 @@
   }
 
   body {
-    /* overflow-x: hidden; */ /* Removed to allow horizontal scrolling */
-    @apply bg-background text-foreground font-sans; /* font-sans uses Poppins */
-    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    /* overflow-x: hidden; */
+    /* Removed to allow horizontal scrolling */
+    @apply bg-background text-foreground font-sans;
+    /* font-sans uses Poppins */
+    scrollbar-width: none;
+    /* Hides scrollbar for Firefox */
     scrollbar-color: transparent transparent;
   }
 
@@ -103,7 +118,8 @@
 
 /* Section that contains the horizontal scroll */
 #sectionPin {
-  height: calc(100vh * 3); /* Adjust based on the number of sections */
+  height: calc(100vh * 3);
+  /* Adjust based on the number of sections */
   overflow: visible;
 }
 
@@ -120,14 +136,16 @@
 .pin-wrap {
   display: flex;
   height: 100vh;
-  width: auto; /* Width is determined by the content */
+  width: auto;
+  /* Width is determined by the content */
   will-change: transform;
 }
 
 /* Individual horizontal sections */
-.pin-wrap > div {
+.pin-wrap>div {
   flex: none;
-  width: 100vw; /* Each section takes up the full viewport width */
+  width: 100vw;
+  /* Each section takes up the full viewport width */
   height: 100vh;
   overflow: hidden;
 }
@@ -136,14 +154,18 @@
 
 /* For Webkit browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 0px; /* No vertical scrollbar */
-  height: 0px; /* No horizontal scrollbar */
+  width: 0px;
+  /* No vertical scrollbar */
+  height: 0px;
+  /* No horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Transparent thumb */
+  background-color: transparent;
+  /* Transparent thumb */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent; /* Transparent track */
+  background-color: transparent;
+  /* Transparent track */
 }
