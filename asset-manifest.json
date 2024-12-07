@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crystalytics/static/css/main.b7cff4c0.css",
-    "main.js": "/crystalytics/static/js/main.ec6fe2af.js",
+    "main.js": "/crystalytics/static/js/main.d2f1bb5e.js",
     "static/media/wordcloud.png": "/crystalytics/static/media/wordcloud.bd542f6a76cf51f25002.png",
     "static/media/customer-segmentation.png": "/crystalytics/static/media/customer-segmentation.1874fe721658958683c5.png",
     "static/media/financial-forecasting.png": "/crystalytics/static/media/financial-forecasting.63197c1d776694d4befa.png",
@@ -20,10 +20,10 @@
     "static/media/fa-v4compatibility.woff2": "/crystalytics/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/crystalytics/index.html",
     "main.b7cff4c0.css.map": "/crystalytics/static/css/main.b7cff4c0.css.map",
-    "main.ec6fe2af.js.map": "/crystalytics/static/js/main.ec6fe2af.js.map"
+    "main.d2f1bb5e.js.map": "/crystalytics/static/js/main.d2f1bb5e.js.map"
   },
   "entrypoints": [
     "static/css/main.b7cff4c0.css",
-    "static/js/main.ec6fe2af.js"
+    "static/js/main.d2f1bb5e.js"
   ]
 }
