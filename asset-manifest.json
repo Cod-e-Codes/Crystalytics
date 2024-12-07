@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crystalytics/static/css/main.1cfc8f9f.css",
-    "main.js": "/crystalytics/static/js/main.24985923.js",
+    "main.css": "/crystalytics/static/css/main.eb1930ce.css",
+    "main.js": "/crystalytics/static/js/main.eb18bd9f.js",
     "static/media/wordcloud.png": "/crystalytics/static/media/wordcloud.bd542f6a76cf51f25002.png",
     "static/media/customer-segmentation.png": "/crystalytics/static/media/customer-segmentation.1874fe721658958683c5.png",
     "static/media/financial-forecasting.png": "/crystalytics/static/media/financial-forecasting.63197c1d776694d4befa.png",
@@ -18,11 +18,11 @@
     "static/media/fa-v4compatibility.ttf": "/crystalytics/static/media/fa-v4compatibility.fa86b3c85e77abbd2ebd.ttf",
     "static/media/fa-v4compatibility.woff2": "/crystalytics/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/crystalytics/index.html",
-    "main.1cfc8f9f.css.map": "/crystalytics/static/css/main.1cfc8f9f.css.map",
-    "main.24985923.js.map": "/crystalytics/static/js/main.24985923.js.map"
+    "main.eb1930ce.css.map": "/crystalytics/static/css/main.eb1930ce.css.map",
+    "main.eb18bd9f.js.map": "/crystalytics/static/js/main.eb18bd9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cfc8f9f.css",
-    "static/js/main.24985923.js"
+    "static/css/main.eb1930ce.css",
+    "static/js/main.eb18bd9f.js"
   ]
 }
