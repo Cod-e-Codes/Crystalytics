@@ -1,50 +1,62 @@
 import { motion } from "framer-motion";
-import logo from "./logo.png"; // Import the logo
-import dataAnalysisImage from "./wordcloud.png"; // Import the word cloud image
+import logo from "./logo.png";
+import dataAnalysisImage from "./wordcloud.png";
+import heroBackground from "./hero-background.png"; // Import the background image
 
 export default function Hero() {
     return (
-        <section className="section-scroll relative overflow-hidden h-screen flex items-center">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8">
-                {/* Left Content (Logo and Button) */}
-                <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="flex-1 flex flex-col items-center"
-                >
-                    <motion.img
-                        src={logo} // Use the imported logo variable
-                        alt="Crystalytics Logo"
-                        className="w-64 md:w-96 lg:w-[500px]"
-                    />
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.5 }}
-                        className="mt-6"
-                    >
-                        <a
-                            href="#contact"
-                            className="bg-primary text-primary-foreground px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary/90 transition-colors"
-                        >
-                            Get in Touch
-                        </a>
-                    </motion.div>
-                </motion.div>
+        <section
+            className="section-scroll relative overflow-hidden h-screen flex items-center bg-cover bg-center"
+            style={{ backgroundImage: `url(${heroBackground})` }}
+        >
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60 pointer-events-none"></div>
 
-                {/* Right Content (Word Cloud Image) */}
+            <div className="container mx-auto px-4 flex justify-center items-center relative">
+                {/* Single Card */}
                 <motion.div
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="flex-1 flex justify-center"
+                    className="flex flex-col md:flex-row items-center bg-background text-foreground p-8 rounded-lg shadow-lg border-2 border-primary w-full max-w-4xl"
                 >
-                    <motion.img
-                        src={dataAnalysisImage}
-                        alt="Data Analysis Word Cloud"
-                        className="w-64 md:w-96 lg:w-[500px] rounded-lg"
-                    />
+                    {/* Left Section (Logo and Text) */}
+                    <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+                        <motion.img
+                            src={logo}
+                            alt="Crystalytics Logo"
+                            className="w-40 md:w-56 lg:w-64 mb-6"
+                        />
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                            Turn Data Into Insights
+                        </h1>
+                        <p className="text-base md:text-lg lg:text-xl mb-6">
+                            Unlock the power of data visualization and analysis with Crystalytics. Transform numbers into actionable strategies.
+                        </p>
+                        <div className="flex gap-4">
+                            <a
+                                href="#contact"
+                                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg text-sm md:text-base lg:text-lg font-semibold hover:bg-primary/90 transition-colors"
+                            >
+                                Get in Touch
+                            </a>
+                            <a
+                                href="#learn-more"
+                                className="border border-primary text-primary px-6 py-3 rounded-lg text-sm md:text-base lg:text-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors"
+                            >
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Right Section (Word Cloud Image) */}
+                    <div className="flex-1 flex justify-center mt-8 md:mt-0">
+                        <img
+                            src={dataAnalysisImage}
+                            alt="Data Analysis Word Cloud"
+                            className="w-48 md:w-64 lg:w-80 rounded-lg"
+                        />
+                    </div>
                 </motion.div>
             </div>
 
