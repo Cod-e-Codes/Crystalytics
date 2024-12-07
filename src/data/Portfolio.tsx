@@ -9,6 +9,8 @@ export interface Project {
     technologies: string[];
     image: string;
     link: string;
+    longDescription?: string;
+    screenshots?: string[];
 }
 
 export interface Skill {
@@ -32,6 +34,7 @@ export const projects: Project[] = [
         id: 1,
         title: "Sales Dashboard",
         description: "Interactive sales analysis dashboard built with Tableau.",
+        longDescription: "This project focuses on creating a visually appealing and interactive sales dashboard using Tableau. It helps organizations analyze sales trends, track performance metrics, and identify key areas for improvement. The dashboard integrates SQL queries for data extraction and Excel for preprocessing, providing a seamless and efficient workflow.",
         technologies: ["Tableau", "SQL", "Excel"],
         image: salesDashboard,
         link: "#",
@@ -40,6 +43,7 @@ export const projects: Project[] = [
         id: 2,
         title: "Customer Segmentation",
         description: "K-means clustering to identify customer segments.",
+        longDescription: "In this project, customer data is analyzed and segmented using K-means clustering. Python, Pandas, and Matplotlib are employed to preprocess data, perform clustering, and visualize the results. The project aids businesses in understanding customer behaviors, enhancing marketing strategies, and improving customer retention.",
         technologies: ["Python", "Pandas", "Matplotlib"],
         image: customerSegmentation,
         link: "#",
@@ -48,6 +52,7 @@ export const projects: Project[] = [
         id: 3,
         title: "Financial Forecasting",
         description: "Time-series forecasting model for revenue prediction.",
+        longDescription: "This project involves building a time-series forecasting model to predict future revenue trends. Using R and ggplot2, historical financial data is analyzed and visualized. The project leverages SQL for data retrieval, ensuring accurate and reliable predictions for better decision-making in financial planning.",
         technologies: ["R", "ggplot2", "SQL"],
         image: financialForecasting,
         link: "#",
