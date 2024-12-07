@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crystalytics/static/css/main.eb1930ce.css",
-    "main.js": "/crystalytics/static/js/main.eb18bd9f.js",
+    "main.css": "/crystalytics/static/css/main.b7cff4c0.css",
+    "main.js": "/crystalytics/static/js/main.ec6fe2af.js",
     "static/media/wordcloud.png": "/crystalytics/static/media/wordcloud.bd542f6a76cf51f25002.png",
     "static/media/customer-segmentation.png": "/crystalytics/static/media/customer-segmentation.1874fe721658958683c5.png",
     "static/media/financial-forecasting.png": "/crystalytics/static/media/financial-forecasting.63197c1d776694d4befa.png",
@@ -13,16 +13,17 @@
     "static/media/logo.png": "/crystalytics/static/media/logo.f107ae917b811c352c83.png",
     "static/media/fa-solid-900.woff2": "/crystalytics/static/media/fa-solid-900.83a538a018a9e44b023a.woff2",
     "static/media/fa-brands-400.woff2": "/crystalytics/static/media/fa-brands-400.fdbb558523a380307689.woff2",
+    "static/media/hero-background.png": "/crystalytics/static/media/hero-background.796f9f0c26dd2a08aa7e.png",
     "static/media/fa-regular-400.ttf": "/crystalytics/static/media/fa-regular-400.05fdd87be89f7f8f0a1e.ttf",
     "static/media/fa-regular-400.woff2": "/crystalytics/static/media/fa-regular-400.4f6a2dabee9c092d09b9.woff2",
     "static/media/fa-v4compatibility.ttf": "/crystalytics/static/media/fa-v4compatibility.fa86b3c85e77abbd2ebd.ttf",
     "static/media/fa-v4compatibility.woff2": "/crystalytics/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/crystalytics/index.html",
-    "main.eb1930ce.css.map": "/crystalytics/static/css/main.eb1930ce.css.map",
-    "main.eb18bd9f.js.map": "/crystalytics/static/js/main.eb18bd9f.js.map"
+    "main.b7cff4c0.css.map": "/crystalytics/static/css/main.b7cff4c0.css.map",
+    "main.ec6fe2af.js.map": "/crystalytics/static/js/main.ec6fe2af.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb1930ce.css",
-    "static/js/main.eb18bd9f.js"
+    "static/css/main.b7cff4c0.css",
+    "static/js/main.ec6fe2af.js"
   ]
 }
