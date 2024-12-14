@@ -1,9 +1,32 @@
 import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Model } from "./ModelLoader"; // The component that loads your 3D model
 import logo from "./logo.png";
-import dataAnalysisImage from "./wordcloud.png";
-import heroBackground from "./hero-background.png"; // Import the background image
+import heroBackground from "./hero-background.png";
 
 export default function Hero() {
+    const [rotationY, setRotationY] = useState(0);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            const scrollDelta = currentScrollY - lastScrollY;
+
+            // Increase sensitivity from 0.001 to 0.005 for faster rotation
+            const rotationChange = scrollDelta * 0.005;
+
+            setRotationY((prev) => prev + rotationChange);
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [lastScrollY]);
+
     return (
         <section
             className="section-scroll relative overflow-hidden h-screen flex items-center bg-cover bg-center"
@@ -49,13 +72,16 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    {/* Right Section (Word Cloud Image) */}
-                    <div className="flex-1 flex justify-center mt-8 md:mt-0">
-                        <img
-                            src={dataAnalysisImage}
-                            alt="Data Analysis Word Cloud"
-                            className="w-48 md:w-64 lg:w-80 rounded-lg"
-                        />
+                    {/* Right Section (3D Model) */}
+                    <div className="flex-1 flex justify-center mt-8 md:mt-0 h-48 md:h-64 lg:h-80 w-full relative">
+                        <Canvas
+                            className="w-full h-full"
+                            camera={{ position: [0, 0, 4] }} // Move camera slightly closer
+                        >
+                            <ambientLight intensity={1.5} />
+                            <directionalLight position={[0, 5, 5]} intensity={2} />
+                            <Model rotationY={rotationY} />
+                        </Canvas>
                     </div>
                 </motion.div>
             </div>
